@@ -1,0 +1,111 @@
+﻿v. 1.0.0_b5 (27.03.2019)
+NEU:
+* Keine Unterstüzung mehr von Windows XP.
+* Es gibt nun eine Option, wo man bei einem Gewinn einen erhöhten Prozentsatz erhalten
+  kann, es sind somit Prozentsätze bis zu 910 % möglich. Sollte man diese Option jedoch
+  aktivieren und Verlieren, verliert man zusätzlich zu dem Einsatz noch die hälfte
+  seines aktuellen Guthabens.
+* Vorbereitungen für eine neue Schwierigkeitsstufe.
+VERÄNDERT:
+* Man erhält bei der Stufe mittel nun eine Verzinsung von 19 % anstelle von 13 %.
+* Kleinere Design Anpassungen.
+* Quellcode optimierungen
+* Es wird nun kein Hinweis mehr bei dem ersten Programm start angezeigt.
+* Der Maximale Einsatz beträgt nun: 9.223.372.036.854.775.807
+  * Bei dem Multiplayer spiel bleibt jedoch die maximale Zahl: 2.147.483.647
+* Es wird nun .NET Framework 4.5.2 benötigt.
+* Es wird nun einem Angezeigt wie hoch der zusätzliche Gewinn bei dem entsprechendem
+  Prozentsatz ist.
+* Die Hinweis Form wurde kommplett gelöscht.
+* Eine neue Zusatzzahl wurde hinzugefügt. Es sind somit nun zusätzliche Gewinne bis zu
+  100 % möglich.
+* Die Verzinsung bei der Stufe Schwer bträgt nun 40 %.
+FIX:
+* Sollten die Highscore Dateien nicht vorhanden sein werden diese nun direkt erstellt.
+* Bei dem Highscore wird nun auch das Datum mit angezeigt.
+* Bei den Highscore wurde der Fehler behoben, dass die Nummerierung der einzelnen
+  Einträge nicht funktioniert hat und immer nur eine 0 angezeigt wurde.
+* Bei bestimmten Textboxen werden nun nur noch Zahlen angeommen.
+
+v. 1.0.0_b4 (08.08.2017)
+NEU:
+* Sollte man bei dem Einsatz als Vorzeichen ein +,-,*, oder / Zeichen eingeben werden
+  diese nun entfernt.
+* Es gibt nun einen Mehrspieler modus wo der 2. Spieler die Zahl von dem 1. Spieler
+  erraten muss. Es sind alle Ganzzahlen bis zu 2 147 483 647 möglich.
+* Es gibt nun eine Highscore Liste. Diese wird in den AppData Ordner der Anwendung
+  gespeichert. Speicherort: 
+  %appdata%\Spielsücht\Spielsücht\Highscore_Spiel[Nummer des Spiel].csv
+  * Jedes Spiel hat eine eigene Highscore Liste.
+* Wenn man im ersten Spiel die Schwierigkeit ändert wird einem nun direkt angezeigt
+  wie groß der Bereich ist und mit wieviel Prozent das Guthaben eventuell verzinst wird.
+* Um ein Spiel zu starten ist es wichtig einen Namen auszuwählen, da es sonst Probleme
+  mit der Highscore Liste geben könnte.
+FIX:
+* Der Fehler das man kein Guthaben bekam nachdem man gewann, sollte nun behoben sein.
+
+v. 1.0.0_b3 (30.07.2017)
+NEU:
+* Der Changelog wird nun in mehrere Teile unterteil NEU, BEHOBEN, VERÄNDERT.
+* Es wurden einige Vorbereitungen getroffen für einige neue features.
+  * Die Highscore liste wird eine "unendliche" liste sein.
+  * Um punkte für den Highscore zu erhalten muss man einfach mehrmals in Folge korrekt
+    die zahl raten.
+* Das Guthaben wird zwischen allen Spielen synchronisiert.
+* In der Auswahl Form wird einem das aktuelle Guthaben in dem Titel der Form angezeigt.
+  Bisher fällt mir kein bessere Platz dafür ein.
+* Es gibt nun ein neues Spiel wo man raten muss in welchem Bereich die zahl des NPC liegt.
+  * Solte man bei diesem Spiel in den minus Bereich gelangen wird hier mit 13 % Verzinst.
+* Sollte man mit dem Guthaben in den minus Bereich kommen wird das Spiel beendet sollte man
+  unter -100 gelangen.
+  * Anschließend wird automatisch ein neues Spiel gestartet.
+  * Das Guthaben wird auf 1000 zurückgestzt.
+* Es gibt nun eine Statistiken Form. In der Form kan man sich folgende Sachen anschauen:
+  * Das Aktuelle Guthaben
+  * Die Anzahl der bisher Gewonnen Versuche (Aus allen Spielen)
+  * Die Anzahl der bisher Verlorenen Versuche (Aus allen Spielen)
+  * Die Anzahl der Verlorenen Spiele (Aus allen Spielen)
+VERÄNDERT:
+* Der Link zu der Über Form wurde zu der Auswahl Form verschoben.
+
+v. 1.0.0_b2 (23.07.2017)
+NEU:
+* Es gibt nun eine Über Form.
+* Kleinere Design anpassungen.
+* Die Textbox in der Changelog Form wird nun in dem kompletten fenster dargestellt.
+* Vor dem ersten Programmstart wird nun eine kleine Hinweis form angezeigt.
+  Diese Form lässt sich auch jederzeit aus der Über Form Starten.
+VERÄNDERT:
+* Der Maximal Betrag den man nun einsetzten kann wurde auf 2 147 483 647 verringert.
+* Im Changelog (Doppelklick auf die Versionsnummer) wird nun immer das datum der
+  Veröffentlichung angegeben.
+* Die verzinsung im minus guthaben bereich wurde so angepasst das es je nach
+  Schwierigkeits stufe eine andere Verzinsung gibt:
+  * Auf der Stufe Leicht gibt es eine 5 % verzinsung
+  * Auf der Stufe Mittel gibt es eine 13 % verzinsung
+  * Auf der Stufe Schwer gibt es eine 30 % verzinsung
+BEHOBEN:
+* Der Fehler das man auch text eingeben konnte und dann eine Fehlermeldung
+  bekam wurde nun gelöst.
+* Ein kleiner Wiederholungsfehler im Text wurde behoben.
+* Der Fehler das man durch einen negativen Einsatz geld zurück bekam wurde behoben.
+
+v. 1.0.0_b1 (19.07.2017)
+NEU:
+* Es ist möglich ein Betrag zu setzen.
+* Es ist Pflicht eine Zahl anzugeben da sonst das Programm abstürzt.
+* Man besitzt ein Startguthaben von 1000 (Währung deines Aktuellen Landes).
+* Um sein Guthaben zu erhöhen muss man einfach nur die richtige Zahl tippen.
+* Man kann die Schwierigkeit einstellen:
+  * Leicht von 1 bis 10
+  * Mittel von 1 bis 20
+  * Schwer von 1 bis 100
+* Sollte man mit minus Guthaben weiterspielen wird das nun mit 13 % verzinst.
+  Also sollte man sein Einsatz mit bedacht wählen.
+* Jedoch besteht auche eine kleine Wahrscheinlichkeit das der Gewonne betrag
+  um eventuell 20 % oder 80 % des eingesetzten Betrags erhöt wird.
+* Es ist nun möglich All in zu gehen.
+* Es ist nun möglich dem Programm die aufgabe zu geben eine Zufallszahl auszusuchen.
+  Diese befindet sich in dem Bereich des Aktuellen Schwierigkeitsgrad.
+* Die Aktuelle Schwierigkeit wird nun auch nach einen Neustart des Programms
+  die gleiche bleiben.
